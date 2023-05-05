@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Twitter Analyzer</title>
+    <style>
+        nav {
+            background-color: lightcyan;
+            color: white;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        nav ul li a:hover {
+            color: blue;
+        }
+        
+        body {
+            background-image: url("https://example.com/background.jpg");
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            color: black;
+            text-align: center;
+        }
+        
+        h2 {
+            color: black;
+            text-align: center;
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 auto;
+            max-width: 500px;
+        }
+        
+        label {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        input[type="text"] {
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: solid black;
+            width: 95%;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"] {
+            margin-top: 30px;
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        input[type="date"] {
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/templates/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5002">Twitter UserName Tweet Analysis</a></li>
+            <li><a href="http://127.0.0.1:5001">Text Username Reply Analysis</a></li>
+            <li><a href="http://127.0.0.1:5000">Twitter Keyword Analysis</a></li>
+            <li><a href="https://colab.research.google.com/drive/1Zkq1YhEByZK5K4TUpm7v7dKGUHZf8BB9?usp=sharing">Text Intent Classification</a></li>
+            <li><a href="https://colab.research.google.com/drive/1u8lcWpzsdCcnWTaab5bbrJ3rWNpNVokz?usp=sharing">Location Extractor</a></li>
+        </ul>
+    </nav>
+    <h1>Location Extractor</h1>
+
+    <form action="/loc" method="POST">
+        <label for="string-input">Enter sentence</label>
+        <input type="text" id="string-input" name="string-input" required>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</html>

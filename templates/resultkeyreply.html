@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+    <style>
+        body {
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        th {
+            display: table-cell;
+            vertical-align: inherit;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        tr {
+            display: table-row;
+            vertical-align: inherit;
+            border-color: black;
+            padding: 1px;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        td {
+            padding-top: .5em;
+            padding-bottom: .5em;
+        }
+        
+        .temp {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: black;
+            text-align: center;
+            width: 100%;
+        }
+        
+        img {
+            margin-left: 60px;
+            margin-right: 60px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        nav {
+            background-color: lightcyan;
+            color: white;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        nav ul li a:hover {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/templates/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5002">Twitter UserName Tweet Analysis</a></li>
+            <li><a href="http://127.0.0.1:5001">Text Username Reply Analysis</a></li>
+            <li><a href="http://127.0.0.1:5000">Twitter Keyword Analysis</a></li>
+            <li><a href="https://colab.research.google.com/drive/1Zkq1YhEByZK5K4TUpm7v7dKGUHZf8BB9?usp=sharing">Text Intent Classification</a></li>
+            <li><a href="https://colab.research.google.com/drive/1u8lcWpzsdCcnWTaab5bbrJ3rWNpNVokz?usp=sharing">Location Extractor</a></li>
+        </ul>
+    </nav>
+    <h1>Prediction</h1>
+    {% for table in tables %}
+    <div class="temp"> {{ table|safe }} </div>
+    {% endfor %}
+    <br><br><br>
+    <h3>Distribution of responses</h3>
+    <img src="data:image/png;base64, {{ plot_url}}">
+    <p>Bar Graphs</p><br><br>
+    <img src="data:image/png;base64, {{ pie_url}}">
+    <p>Response Analysis</p><br><br>
+    <img src="data:image/png;base64, {{ pie2_url}}">
+    <p>Pie Chart</p><br>
+</body>
+
+</html>

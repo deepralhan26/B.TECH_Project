@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 6px;
+    text-align: center;
+}
+
+nav {
+    background-color: lightcyan;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 190px;
+}
+
+.thumbnail1 {
+    float: left;
+    width: 225px;
+    height: 160px;
+    background-color: white;
+    border: solid black;
+    border-radius: 10px;
+    margin-left: 100px;
+}
+
+.thumbnail2 {
+    float: left;
+    width: 225px;
+    height: 160px;
+    border: solid black;
+    margin-left: 80px;
+    margin-right: 80px;
+    border-radius: 10px;
+}
+
+.thumbnail3 {
+    float: left;
+    width: 225px;
+    height: 160px;
+    background-color: black;
+    border: solid black;
+    border-radius: 10px;
+}
+
+.thumbnail4 {
+    float: left;
+    width: 225px;
+    height: 160px;
+    border: solid black;
+    background-color: #3FB7AB;
+    margin-left: 250px;
+    margin-right: 60px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.thumbnail5 {
+    float: left;
+    width: 225px;
+    height: 160px;
+    border: solid black;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.thumbnail1 img {
+    max-width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.thumbnail1 h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.thumbnail2 img {
+    max-width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 17%;
+}
+
+.thumbnail2 h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.thumbnail3 img {
+    max-width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.thumbnail3 h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.thumbnail4 img {
+    max-width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 7%;
+}
+
+.thumbnail4 h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.thumbnail5 img {
+    max-width: 200px;
+    height: 160px;
+    border-radius: 10px;
+    margin-left: 15%;
+}
+
+.thumbnail5 h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}

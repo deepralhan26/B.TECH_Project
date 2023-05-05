@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Result</title>
+    <style>
+        nav {
+            background-color: lightcyan;
+            color: white;
+            padding: 10px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        
+        nav ul li a:hover {
+            color: blue;
+        }
+        
+        body {
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:3000/templates/index.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5002">Twitter UserName Tweet Analysis</a></li>
+            <li><a href="http://127.0.0.1:5001">Text Username Reply Analysis</a></li>
+            <li><a href="http://127.0.0.1:5000">Twitter Keyword Analysis</a></li>
+            <li><a href="https://colab.research.google.com/drive/1Zkq1YhEByZK5K4TUpm7v7dKGUHZf8BB9?usp=sharing">Text Intent Classification</a></li>
+            <li><a href="https://colab.research.google.com/drive/1u8lcWpzsdCcnWTaab5bbrJ3rWNpNVokz?usp=sharing">Location Extractor</a></li>
+        </ul>
+    </nav>
+    <h1>Prediction</h1> <br><br><br><br>
+    <h3>The sentence " {{event}} " belongs to " {{result}} "" category.</h3>
+
+</body>
+
+</html>
